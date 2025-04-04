@@ -1,3 +1,6 @@
 .ProjectsPage-container{
     text-align: center;
+    border: 1px grey solid;
+    min-height: 100vh;
+    max-height: 100%;
 }
