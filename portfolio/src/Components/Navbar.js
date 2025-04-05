@@ -1,11 +1,15 @@
 import "../Styles/Navbar.css";
-import {useNavigate } from "react-router-dom";
+import Home from "./Home";
+import Projects from "./Projects";
+import { useState } from 'react';
 function Navbar(){
-    const navigate = useNavigate();
+    const [pageIndicator,setPageIndicator] = useState("home");
+    // Some way like this but has to wait to get the info to render the navbar, google it later :), cause code works but renders to fast?
+    //window.location.href.includes("projects"? "projects" : "home")
     return(
         <div className="Navbar-container">
-            <button onClick={() => navigate("/")}>Home</button>
-            <button onClick={() => navigate("/projects")}>Projects</button>
+            <Home page={pageIndicator} setPage={setPageIndicator}/>
+            <Projects page={pageIndicator} setPage={setPageIndicator}/>
         </div>
     );
 }

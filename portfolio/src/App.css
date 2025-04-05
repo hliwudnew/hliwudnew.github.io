@@ -4,4 +4,11 @@
   max-height: 100%;
   margin-left: 30%;
   margin-right: 30%;
+  color: white;
+}
+
+html{
+  /*#000000ee*/
+  /*#000511ee*/
+  background-color: #000511ee;
 }

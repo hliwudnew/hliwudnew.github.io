@@ -1,0 +1,13 @@
+.Icon{
+    /*Orignal Designs for Icons started at 16x16*/
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+/*I have to give each button individual sizes due to scaling*/
+.Button{
+    width: 108px;
+    height: 32px;
+    cursor: pointer;
+}

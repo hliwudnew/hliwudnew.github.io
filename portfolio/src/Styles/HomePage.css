@@ -3,6 +3,7 @@
     border: 1px grey solid;
     min-height: 100vh;
     max-height: 100%;
+    padding-top: 10%;
 }
 
 .HomePage-introduction{
@@ -23,7 +24,16 @@
 }
 
 .HomePage-contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
+.HomePage-resume{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .HomePage-experience{

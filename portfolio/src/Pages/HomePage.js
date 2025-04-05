@@ -2,9 +2,12 @@ import "../Styles/HomePage.css";
 import me from "../Images/images.png"
 import ProjectTile from "../Components/ProjectTile";
 import {useNavigate } from "react-router-dom";
+import LinkedIn from "../Components/LinkedIn";
+import Github from "../Components/Github";
+import Email from "../Components/Email";
+import Resume from "../Components/Resume";
 function HomePage(){
     const navigate = useNavigate();
-
     return(
         <div className="HomePage-container">
             <div className="HomePage-introduction">
@@ -13,10 +16,13 @@ function HomePage(){
                     <p>Software Developer | Frontend | 📌 Canada 🍁</p>
                     <p>I learn and I get it done</p>
                     <div className="HomePage-contacts">
-                        <button>Resume</button>
-                        <button>LinkedIn</button>
-                        <button>Github</button>
-                        <button>Email</button>
+                        <div className="HomePage-resume">
+                            <Resume/>
+                            <p>Resume</p>
+                        </div>
+                        <LinkedIn/>
+                        <Github/>
+                        <Email/>
                     </div>
                 </div>
                 <div className="HomePage-Picture">

@@ -5,6 +5,15 @@ import ProjectsPage from './Pages/ProjectsPage';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 
+/*
+    Small Details List:
+    - Change swaping pages to scroll up quickly or nice animation instead of a weird cut
+    - Hover Effects for Icons. Ex Github, Email, Resume, LinkedIn
+
+
+*/
+
+
 function App() {
   return (
     <div className="App">
