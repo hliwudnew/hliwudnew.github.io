@@ -43,13 +43,17 @@
 .HomePage-experience-toggle{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     gap:1%;
+    border: 5px solid #cfe8ff;
+    border-radius: 5px;
+    padding: 1%;
+    margin-bottom: 1%;
 }
 
 .HomePage-experience-content{
-    border: 1px purple solid;
-    border-radius: 5%;
+    border: 1px #cfe8ff solid;
+    border-radius: 30px;
 }
 
 .HomePage-featured{
@@ -68,8 +72,7 @@
 .HomePage-projects{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     margin: 0%;
-    justify-content: center;
+    justify-content: space-around;
 }
 

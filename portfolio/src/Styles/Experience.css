@@ -1,0 +1,26 @@
+.Experience-container{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.Experience-chain{
+    text-align: left;
+    padding-left: 2%;
+    min-height: 100%;
+}
+
+.Experience-img{
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+}
+
+.Experience-details{
+    padding-left: 2%;
+    text-align: left;
+    width: 100%;
+    margin: 0%;
+}

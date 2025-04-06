@@ -1,15 +1,37 @@
 .ProjectTile-container{
     text-align: center;
-    border: 1px solid orange;
+    border: 1px solid #cfe8ff;
     border-radius: 5%;
-    display: flex;
-    flex-direction: column;
     padding: 5%;
     margin: 1%;
+    width: 100%;
 }
 
 .ProjectTile-frameworks{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 5%;
 }
+
+.ProjectTile-details{
+    text-align: left;
+    padding-top: 5%;
+}
+
+.ProjectTile-buttons{
+    padding-top: 5%;
+    text-align: left;
+}
+
+.ProjectTile-img-container{
+
+}
+
+/* .ProjectTile-tech{
+    margin:"0%";
+    padding:"2%"; 
+    border-radius:"15%"; 
+    background-color:"#293377"; 
+    font-size:"12px";
+} */

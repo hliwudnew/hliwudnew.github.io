@@ -9,7 +9,7 @@ import Footer from './Components/Footer';
     Small Details List:
     - Change swaping pages to scroll up quickly or nice animation instead of a weird cut
     - Hover Effects for Icons. Ex Github, Email, Resume, LinkedIn
-
+    - Figure out scaling for icons in work and Education (Might involve making the chain longer to scale the border to be smaller)
 
 */
 
