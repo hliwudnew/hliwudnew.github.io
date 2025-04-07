@@ -3,6 +3,7 @@
     width: 32px;
     height: 32px;
     cursor: pointer;
+    margin: 1%;
 }
 
 /*I have to give each button individual sizes due to scaling*/

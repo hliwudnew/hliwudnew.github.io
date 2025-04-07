@@ -14,13 +14,14 @@
 }
 
 .HomePage-blurb{
-    margin-left: 5%;
-    margin-top: 5%;
+    /* margin-left: 5%;
+    margin-top: 5%; */
+    text-align: left;
 }
 
 .HomePage-Picture{
-    margin-right: 5%;
-    margin-top: 5%;
+    /* margin-right: 5%;
+    margin-top: 5%; */
 }
 
 .HomePage-contacts{
@@ -70,9 +71,9 @@
 }
 
 .HomePage-projects{
-    display: flex;
-    flex-direction: row;
-    margin: 0%;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1%;
+    row-gap: 1% ;
 }
 

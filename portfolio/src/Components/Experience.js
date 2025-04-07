@@ -1,6 +1,6 @@
 import "../Styles/Experience.css";
 import moneris from "../Images/moneris-logo-small.png";
-function Experience(){
+function Experience({data}){
     return(
         <div className="Experience-container">
             <div className="Experience-chain">
@@ -15,13 +15,25 @@ function Experience(){
                 {/* <img x="0" y="60" width="300" height="100" className="Experience-img"src={moneris}></img> */}
             </div>
             <div className="Experience-details">
-                <p>2023-Present</p>
-                <h4>Moneris</h4>
-                <p>Software QA</p>
-                <ul>
+                <p style={{margin:"0%"}}>{data.started} - {data.ended}</p>
+                <h4 style={{margin:"0%"}}>{data.where}</h4>
+                <p style={{margin:"0%"}}>{data.title}</p>
+                <ul style={{margin:"0%", marginTop:"1%"}}>
+                {
+                    data?
+                    data.points.map((point,index) =>{
+                        return(
+                            <li key={index}>{point}</li>
+                        );
+                    })
+                    :
+                    <p>No Points</p>
+                }
+                </ul>
+                {/* <ul>
                     <li>I did cool shit</li>
                     <li>One of my favorite experiences</li>
-                </ul>
+                </ul> */}
             </div>
         </div>
     );

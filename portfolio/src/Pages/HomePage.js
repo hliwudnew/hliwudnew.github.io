@@ -12,26 +12,50 @@ import StaticRide from "../Images/staticride.png"
 import { useState } from "react";
 function HomePage(){
     const navigate = useNavigate();
-    // const [experiences,setExperiences] = useState([
-    //     {
-            
-    //     }
-    // ])
+    const [swapData,setSwapData] = useState("work");
+    const [experience,setExperience] = useState([
+        {
+            type:"work",
+            started:"May 2023",
+            ended:"Sept 2023",
+            where:"Deepdiveai",
+            title:"Frontend Software Development: Summer Intern",
+            points:["Stellar time","Wicked"],
+        },
+        {
+            type:"work",
+            started:"May 2022",
+            ended:"Sept 2022",
+            where:"Moneris",
+            title:"Software QA: Summer Intern",
+            points:["Was cool"],
+        },
+        {
+            type:"education",
+            started:"2021",
+            ended:"2025",
+            where:"York University",
+            title:"Honours B.Sc. Computer Science",
+            points:["4 Years - Dean's Honour Roll"],
+        }
+    ])
 
-    //Limit of 2, need to change scaling adn allow warp for more
+    //Only do 2, more might look like a whole lot to look at, as in overwhealming
     const [projects,setProjects] = useState([
         {
             name:"Grabbit",
             description:"Ecommerce platform: User Oriented",
             img:Grabbit,
-            techs:["React","Stripe","JWT"],
+            techs:["React","MongoDB","Stripe","JWT"],
+            repo:"https://github.com/hliwudnew/Grabbit",
             demo:"https://www.youtube.com/watch?v=rR0rE0_wH7E"
         },
         {
             name:"Static Ride",
             description:"Ecommerce platform: Car Dealership",
             img:StaticRide,
-            techs:["React","AWS","JWT"],
+            repo:"https://github.com/dvoicu-cmd/EECS-4413",
+            techs:["React", "MongoDB","AWS","JWT"],
             demo:""
         },
     ])
@@ -59,12 +83,22 @@ function HomePage(){
             </div>
             <div className="HomePage-experience">
                 <div className="HomePage-experience-toggle">
-                    <button>Work</button>
-                    <button>Education</button>
+                    <button onClick={() => setSwapData("work")}>Work</button>
+                    <button onClick={() => setSwapData("education")}>Education</button>
                 </div>
                 <div className="HomePage-experience-content">
-                    <Experience/>
-                    <Experience/>
+                    {
+                        experience?
+                        experience.map((exp,index) =>{
+                            if(exp.type !== swapData)return;
+
+                            return(
+                                <Experience key={index} data={exp}/>
+                            )
+                        })
+                        :
+                        <p>No Experiences Listed</p>
+                    }
                 </div>
             </div>
             <div className="HomePage-featured">

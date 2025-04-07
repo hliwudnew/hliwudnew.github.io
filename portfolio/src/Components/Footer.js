@@ -1,4 +1,7 @@
 import "../Styles/Footer.css";
+import Email from "./Email";
+import Github from "./Github";
+import LinkedIn from "./LinkedIn";
 function Footer(){
     
     return(
@@ -7,9 +10,9 @@ function Footer(){
                 <p>© 2025 Gabriel Henderson</p>
             </div>
             <div className="Footer-contacts">
-                <button>LinkedIn</button>
-                <button>Github</button>
-                <button>Email</button>
+                <LinkedIn/>
+                <Github/>
+                <Email/>
             </div>
         </div>
     );

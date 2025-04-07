@@ -26,7 +26,7 @@ function ProjectTile({data}){
                 }
             </div>
             <div className="ProjectTile-buttons">
-                <Github url={"https://github.com/hliwudnew/Grabbit"}/>
+                <Github url={data.repo}/>
                 {
                     data.demo?
                     <Youtube url={data.demo}/>
