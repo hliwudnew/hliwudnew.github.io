@@ -1,13 +1,15 @@
 .Navbar-container{
     text-align: center;
-    border: 1px pink solid;
+    /* border: 1px pink solid; */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: left;
     gap: 1%;
     position: fixed;
-    width: 38%;
-    background-color: #000511ee;
-    padding: 1%;
+    width: 40%;
+    background-color:#00051105;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    backdrop-filter: blur(5px);
 }

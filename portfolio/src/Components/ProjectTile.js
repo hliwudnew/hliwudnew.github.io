@@ -18,7 +18,7 @@ function ProjectTile({data}){
                     data.techs?
                     data.techs.map((text, index) =>{
                         return(
-                            <p key={index} style={{margin:"0%", marginRight:"2%",padding:"2%", borderRadius:"15%", backgroundColor:"#293377", fontSize:"12px"}}>{text}</p>
+                            <p key={index} style={{margin:"0%", marginRight:"2%",padding:"2%", borderRadius:"15%", backgroundColor:"#293377", fontSize:"12px", color:"#cfe8ff"}}>{text}</p>
                         )
                     })
                     :
