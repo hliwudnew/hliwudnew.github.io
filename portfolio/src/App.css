@@ -9,6 +9,7 @@
   font-family: "Archivo", sans-serif;
 }
 
+
 :root{
   --primary: #ffffff;
   --secondary: #ffffff;
@@ -19,6 +20,8 @@ html{
   /*#000000ee*/
   /*#000511ee*/
   background-color: #000511ee;
+  /* scrollbar-color: #aabfe0 #293377; */
+  scrollbar-color: #aabfe0 #000511ee;
 }
 
 h1, h2, h3,h4{
@@ -28,3 +31,5 @@ h1, h2, h3,h4{
 p, li, ul{
   color: #aabfe0;
 }
+
+

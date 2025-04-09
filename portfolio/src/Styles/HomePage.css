@@ -14,8 +14,6 @@
 }
 
 .HomePage-blurb{
-    /*margin-left: 5%;
-    margin-top: 5%; */
     text-align: left;
 }
 
@@ -30,7 +28,8 @@
 .HomePage-contacts{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: left;
+    gap: 7.5%;
     align-items: center;
 }
 
@@ -40,8 +39,39 @@
     align-items: center;
 }
 
+.HomePage-techstack{
+    text-align: left;
+    padding-bottom: 5%;
+}
+
+.HomePage-techstack-contents{
+    display: grid;
+    /*grid-template-columns: auto auto auto auto auto auto;*/
+    grid-template-columns: repeat(auto-fill, 185px);
+
+}
+
+.TechStack-Combo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #aabfe0;
+    border-radius: 15px;
+    transition: transform 0.3s;
+    margin: 5%;
+    margin-left: 0%;
+}
+
+.TechStack-Combo:hover{
+    transform: translateY(-5px);
+}
+
+
+
 .HomePage-experience{
     padding-bottom: 5%;
+    text-align: left;
 }
 
 .HomePage-experience-toggle{

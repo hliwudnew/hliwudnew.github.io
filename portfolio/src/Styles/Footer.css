@@ -11,5 +11,6 @@
 .Footer-contacts{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
+    gap: 7.5%;
 }

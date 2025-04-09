@@ -11,7 +11,9 @@ import Grabbit from "../Images/grabbit.png";
 import StaticRide from "../Images/staticride.png"
 import { useState } from "react";
 import moneris from "../Images/moneris-logo-small.png";
-import yorku from "../Images/YorkU.svg";
+import yorku from "../Images/YorkU.jpg";
+import deepdiveai from "../Images/deepdiveai.jpg"
+import TechStack from "../Images/TechStack/images.js"
 function HomePage(){
     const navigate = useNavigate();
     const [swapData,setSwapData] = useState("work");
@@ -22,8 +24,12 @@ function HomePage(){
             ended:"Sept 2023",
             where:"Deepdiveai",
             title:"Frontend Software Development: Summer Intern",
-            points:["Stellar time","Wicked"],
-            img:"https://media.licdn.com/dms/image/v2/C560BAQGfC_b_UVrmuw/company-logo_200_200/company-logo_200_200/0/1680022474549?e=1749686400&v=beta&t=wZT8u5aD-dHUTcCSFWUWSB41tcn0S5yQOY4s5euBZsc",
+            points:[
+                "Developed frontend features in React for memo editing and processing for backend",
+                "Built utility features with Lexical for memo editing",
+                "Constructed design documentations for project documentation and represenation",
+            ],
+            img:deepdiveai,
             link:"https://deepdiveai.ca/",
         },
         {
@@ -32,7 +38,11 @@ function HomePage(){
             ended:"Sept 2022",
             where:"Moneris",
             title:"Software QA: Summer Intern",
-            points:["Was cool"],
+            points:[
+                "Developed Jmeter tests for backend preformace testing under all load circumstances", 
+                "Tested new front end UI features and tested backend features with Postman",
+                "Constructed team meetings for bug reviews and solutions",
+            ],
             img:moneris,
             link:"https://www.moneris.com/",
         },
@@ -43,7 +53,7 @@ function HomePage(){
             where:"York University",
             title:"Honours B.Sc. Computer Science",
             points:["4 Years - Dean's Honour Roll"],
-            img:"https://media.licdn.com/dms/image/v2/D560BAQFI_4JbiEOmPQ/company-logo_200_200/company-logo_200_200/0/1688670035445?e=1749686400&v=beta&t=_L31awIslxG-ocNtiN53p-02vjCzOaMjG0ij1wnDCfo",
+            img:yorku,
             link:"https://www.yorku.ca/",
         }
     ])
@@ -62,8 +72,8 @@ function HomePage(){
             name:"Static Ride",
             description:"Ecommerce platform: Car Dealership",
             img:StaticRide,
-            repo:"https://github.com/dvoicu-cmd/EECS-4413",
             techs:["React", "MongoDB","AWS","JWT"],
+            repo:"https://github.com/dvoicu-cmd/EECS-4413",
             demo:""
         },
     ])
@@ -89,7 +99,26 @@ function HomePage(){
                     <img className="HomePage-Picture" alt="Some How I Disappeared" src={me}></img>
                 </div>
             </div>
+            <div className="HomePage-techstack">
+                <h2>Tech Stack</h2>
+                <div className="HomePage-techstack-contents">
+                    {
+                        TechStack?
+                            (Object.keys(TechStack)).map((tech) =>{
+                                return(
+                                    <div key={tech} className="TechStack-Combo">
+                                        <img style={{width:"32px", height:"32px", marginRight:"5%"}} src={TechStack[tech]}></img>
+                                        <p>{tech}</p>
+                                    </div>
+                                )
+                            })
+                        :
+                        <></>
+                    }
+                </div>
+            </div>
             <div className="HomePage-experience">
+                <h2>Experience</h2>
                 <div className="HomePage-experience-toggle">
                     <button className="HomePage-Button" style={{cursor:"pointer",border:"none",color: swapData !== "work"?"#000511ee":"#aabfe0", backgroundColor: swapData !== "work"?"#aabfe0":"#000511ee", borderRadius:"10px", width:"100%"}} onClick={() => setSwapData("work")}><strong>Work</strong></button>
                     <button style={{cursor:"pointer",border:"none",color: swapData !== "education"?"#000511ee":"#aabfe0", backgroundColor: swapData !== "education"?"#aabfe0":"#000511ee", borderRadius:"10px", width:"100%"}} onClick={() => setSwapData("education")}><strong>Education</strong></button>
