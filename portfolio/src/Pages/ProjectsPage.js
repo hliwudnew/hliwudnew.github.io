@@ -9,7 +9,7 @@ function ProjectsPage(){
     const [projects,setProjects] = useState([
         {
             name:"Grabbit",
-            description:"Ecommerce platform: User Oriented",
+            description:"Ecommerce platform - User Oriented: A platform for selling and buying new and used goods, with built in messaging, Stripe payment, seller dashboard, sales stats, and watchlists.",
             img:Grabbit,
             techs:["React","MongoDB","Stripe","JWT"],
             repo:"https://github.com/hliwudnew/Grabbit",
@@ -17,7 +17,7 @@ function ProjectsPage(){
         },
         {
             name:"Static Ride",
-            description:"Ecommerce platform: Car Dealership",
+            description:"Ecommerce platform - Car Dealership: Fully online car dealership with online purchases for vehicles, reviews, comparisons, usage stats, sales records, and with Gemini chatbot asssistance.",
             img:StaticRide,
             repo:"https://github.com/dvoicu-cmd/EECS-4413",
             techs:["React", "MongoDB","AWS","JWT"],
@@ -25,7 +25,7 @@ function ProjectsPage(){
         },
         {
             name:"York Library",
-            description:"Student Library Platform",
+            description:"Student Library Platform: This is a fully made library system that allows users to buy/rent/request and return books. With notifications, fees, adminstration panels, and online viewing of resources.",
             img:yorkLibrary,
             techs:["Java","CSV","Swing"],
             repo:"https://github.com/hliwudnew/YorkLibrary",

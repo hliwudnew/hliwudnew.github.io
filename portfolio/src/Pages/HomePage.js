@@ -62,7 +62,7 @@ function HomePage(){
     const [projects,setProjects] = useState([
         {
             name:"Grabbit",
-            description:"Ecommerce platform: User Oriented",
+            description:"Ecommerce platform - User Oriented: A platform for selling and buying new and used goods, with built in messaging, Stripe payment, seller dashboard, sales stats, and watchlists.",
             img:Grabbit,
             techs:["React","MongoDB","Stripe","JWT"],
             repo:"https://github.com/hliwudnew/Grabbit",
@@ -70,7 +70,7 @@ function HomePage(){
         },
         {
             name:"Static Ride",
-            description:"Ecommerce platform: Car Dealership",
+            description:"Ecommerce platform - Car Dealership: Fully online car dealership with online purchases for vehicles, reviews, comparisons, usage stats, sales records, and with Gemini chatbot asssistance.",
             img:StaticRide,
             techs:["React", "MongoDB","AWS","JWT"],
             repo:"https://github.com/dvoicu-cmd/EECS-4413",

@@ -1,4 +1,5 @@
 import "../Styles/Navbar.css";
+import Gift from "./Gift";
 import Home from "./Home";
 import Projects from "./Projects";
 import { useState } from 'react';
@@ -8,8 +9,13 @@ function Navbar(){
     //window.location.href.includes("projects"? "projects" : "home")
     return(
         <div className="Navbar-container">
-            <Home page={pageIndicator} setPage={setPageIndicator}/>
-            <Projects page={pageIndicator} setPage={setPageIndicator}/>
+            <div className="Navbar-left">
+                <Home page={pageIndicator} setPage={setPageIndicator}/>
+                <Projects page={pageIndicator} setPage={setPageIndicator}/>
+            </div>
+            <div className="Navbar-right">
+                <Gift/>
+            </div>
         </div>
     );
 }
