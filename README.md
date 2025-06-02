@@ -1,7 +1,8 @@
-# hliwudnew.github.io
-Portfolio
+## Welcome to My Portfolio
 
-To anyone reading this, since its not listed on my profile readme, im not done it yet :)
-
-Just pasting here so I can grab the link faster haha
+This portfolio has all my recent projects and work experiences!
 https://hliwudnew.github.io/
+
+## Future Updates
+
+Planning on doing an overhaul to make it more unique!
