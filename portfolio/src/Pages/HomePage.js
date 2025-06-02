@@ -26,6 +26,7 @@ function HomePage(){
             where:"Deepdiveai",
             title:"Frontend Software Development: Summer Intern",
             points:[
+                "Development in MERN: MongoDB, Express, React, Node.js",
                 "Developed frontend features in React for memo editing and processing for backend",
                 "Built utility features with Lexical for memo editing",
                 "Constructed design documentations for project documentation and represenation",
@@ -42,7 +43,7 @@ function HomePage(){
             points:[
                 "Developed Jmeter tests for backend preformace testing under all load circumstances", 
                 "Tested new front end UI features and tested backend features with Postman",
-                "Constructed team meetings for bug reviews and solutions",
+                "Facilitated meetings to address website defects and coordinated solutions with the development team. ",
             ],
             img:moneris,
             link:"https://www.moneris.com/",
@@ -52,8 +53,8 @@ function HomePage(){
             started:"2021",
             ended:"2025",
             where:"York University",
-            title:"Honours B.Sc. Computer Science",
-            points:["4 Years - Dean's Honour Roll"],
+            title:"Lassonde School of Engineering, B.Sc., Hons. Computer Science",
+            points:["Graduated First Class. Member of Dean's Honour Roll.","4 Years - Dean's Honour Roll"],
             img:yorku,
             link:"https://www.yorku.ca/",
         }
@@ -73,7 +74,7 @@ function HomePage(){
             name:"Static Ride",
             description:"Ecommerce platform - Car Dealership: Fully online car dealership with online purchases for vehicles, reviews, comparisons, usage stats, sales records, and with Gemini chatbot asssistance.",
             img:StaticRide,
-            techs:["React", "MongoDB","AWS","JWT"],
+            techs:["React", "MongoDB","AWS","JWT","Gemini 2.0"],
             repo:"https://github.com/dvoicu-cmd/EECS-4413",
             demo:""
         },
@@ -84,8 +85,8 @@ function HomePage(){
             <div className="HomePage-introduction">
                 <div className="HomePage-blurb">
                     <h1>Hi, I am Gabriel 👋</h1>
-                    <p>Software Developer | Frontend | Canada 🍁</p>
-                    <p>I love to learn and I get it done!</p>
+                    <p>CS Graduate | Software Developer | Canada 🍁</p>
+                    <p>I love to learn and strive for more!</p>
                     <div className="HomePage-contacts">
                         <div className="HomePage-resume">
                             <Resume/>

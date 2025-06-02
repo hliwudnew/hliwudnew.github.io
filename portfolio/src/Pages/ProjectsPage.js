@@ -20,7 +20,7 @@ function ProjectsPage(){
             description:"Ecommerce platform - Car Dealership: Fully online car dealership with online purchases for vehicles, reviews, comparisons, usage stats, sales records, and with Gemini chatbot asssistance.",
             img:StaticRide,
             repo:"https://github.com/dvoicu-cmd/EECS-4413",
-            techs:["React", "MongoDB","AWS","JWT"],
+            techs:["React", "MongoDB","AWS","JWT","Gemini 2.0"],
             demo:""
         },
         {
