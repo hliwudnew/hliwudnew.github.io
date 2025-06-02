@@ -14,6 +14,7 @@ import moneris from "../Images/moneris-logo-small.png";
 import yorku from "../Images/YorkU.jpg";
 import deepdiveai from "../Images/deepdiveai.jpg"
 import TechStack from "../Images/TechStack/images.js"
+import Gabriel from "../Images/me.jpg";
 function HomePage(){
     const navigate = useNavigate();
     const [swapData,setSwapData] = useState("work");
@@ -96,7 +97,7 @@ function HomePage(){
                     </div>
                 </div>
                 <div className="HomePage-Picture-container">
-                    <img className="HomePage-Picture" alt="Some How I Disappeared" src={me}></img>
+                    <img className="HomePage-Picture" alt="Some How I Disappeared" src={Gabriel}></img>
                 </div>
             </div>
             <div className="HomePage-techstack">

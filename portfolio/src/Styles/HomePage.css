@@ -11,6 +11,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 5%;
+    max-height: 25%;
 }
 
 .HomePage-blurb{
@@ -18,11 +19,15 @@
 }
 
 .HomePage-Picture-container{
-    margin-top: 5%;
+    /* margin-top: 5%; */
+    width: 50%;
+    height: 100%;
 }
 
 .HomePage-Picture{
     border-radius: 15px;
+    width: 50%;
+    height: 50%;
 }
 
 .HomePage-contacts{
