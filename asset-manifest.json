@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8d822cff.css",
-    "main.js": "/static/js/main.6e6aa673.js",
+    "main.js": "/static/js/main.c58a2e1d.js",
     "static/media/me.jpg": "/static/media/me.fe227194505d69ae6a52.jpg",
     "static/media/moneris-logo-small.png": "/static/media/moneris-logo-small.20e532826450dc330946.png",
     "static/media/images.png": "/static/media/images.8d187b6b62a37ec4921b.png",
@@ -15,10 +15,10 @@
     "static/media/JavaScript.svg": "/static/media/JavaScript.ba4641e66c4f4664358de937a38bb2e2.svg",
     "index.html": "/index.html",
     "main.8d822cff.css.map": "/static/css/main.8d822cff.css.map",
-    "main.6e6aa673.js.map": "/static/js/main.6e6aa673.js.map"
+    "main.c58a2e1d.js.map": "/static/js/main.c58a2e1d.js.map"
   },
   "entrypoints": [
     "static/css/main.8d822cff.css",
-    "static/js/main.6e6aa673.js"
+    "static/js/main.c58a2e1d.js"
   ]
 }
