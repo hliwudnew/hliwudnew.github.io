@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8d822cff.css",
+    "main.js": "/static/js/main.6e6aa673.js",
+    "static/media/me.jpg": "/static/media/me.fe227194505d69ae6a52.jpg",
+    "static/media/moneris-logo-small.png": "/static/media/moneris-logo-small.20e532826450dc330946.png",
+    "static/media/images.png": "/static/media/images.8d187b6b62a37ec4921b.png",
+    "static/media/yorkLibrary.png": "/static/media/yorkLibrary.3e8cfbd9dad2c9fe7f63.png",
+    "static/media/grabbit.png": "/static/media/grabbit.3cc43d354de4a49714a7.png",
+    "static/media/aws.svg": "/static/media/aws.d866739bf3b7bbc7513d4fd3ade9c799.svg",
+    "static/media/node.svg": "/static/media/node.7f97faf9587342e89697d7bfa17026ab.svg",
+    "static/media/Java.svg": "/static/media/Java.7b9ec0b9a73b0baff4121f08b5af6721.svg",
+    "static/media/MongoDB.svg": "/static/media/MongoDB.e45fbb8c56a12d563c50ca54f94f75ee.svg",
+    "static/media/react.svg": "/static/media/react.43e15ce1fd71072e32781576f709c77d.svg",
+    "static/media/JavaScript.svg": "/static/media/JavaScript.ba4641e66c4f4664358de937a38bb2e2.svg",
+    "index.html": "/index.html",
+    "main.8d822cff.css.map": "/static/css/main.8d822cff.css.map",
+    "main.6e6aa673.js.map": "/static/js/main.6e6aa673.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8d822cff.css",
+    "static/js/main.6e6aa673.js"
+  ]
+}
