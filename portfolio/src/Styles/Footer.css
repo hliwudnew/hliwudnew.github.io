@@ -1,0 +1,17 @@
+.Footer-container{
+    text-align: center;
+    /* border: 1px green solid; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5%;
+}
+
+.Footer-contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 7.5%;
+}

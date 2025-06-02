@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+.App {
+  text-align: center;
+  min-height: 100vh;
+  max-height: 100%;
+  margin-left: 30%;
+  margin-right: 30%;
+  color: white;
+  font-family: "Archivo", sans-serif;
+}
+
+
+:root{
+  --primary: #ffffff;
+  --secondary: #ffffff;
+
+}
+
+html{
+  /*#000000ee*/
+  /*#000511ee*/
+  background-color: #000511ee;
+  /* scrollbar-color: #aabfe0 #293377; */
+  scrollbar-color: #aabfe0 #000511ee;
+}
+
+h1, h2, h3,h4{
+  color: white;
+}
+
+p, li, ul{
+  color: #aabfe0;
+}
+
+

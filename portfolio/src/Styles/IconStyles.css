@@ -1,0 +1,26 @@
+.Icon{
+    /*Orignal Designs for Icons started at 16x16*/
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin: 1%;
+    transition: transform 0.3s;
+}
+
+.Icon:hover {
+    transform: translateY(-5px);
+}
+
+/*I have to give each button individual sizes due to scaling*/
+.Button{
+    width: 108px;
+    height: 32px;
+    cursor: pointer;
+}
+
+/*transition-property: transform; /*What youre useing*/
+/*transition-duration: 0.3s;/*TIme for transition*/
+/*transition-timing-function: ease;/*Accelleration curve*/
+/*transition-delay: 0s;/*Delay before it takes effect*/
+/* OR */
+/* transition: transform 0.3s ease 0s; */
