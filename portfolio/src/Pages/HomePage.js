@@ -54,7 +54,7 @@ function HomePage(){
             ended:"2025",
             where:"York University",
             title:"Lassonde School of Engineering, B.Sc., Hons. Computer Science",
-            points:["Graduated First Class. Member of Dean's Honour Roll.","4 Years - Dean's Honour Roll"],
+            points:["Graduated First Class Standing","4 Years - Dean's Honour Roll"],
             img:yorku,
             link:"https://www.yorku.ca/",
         }
@@ -85,7 +85,7 @@ function HomePage(){
             <div className="HomePage-introduction">
                 <div className="HomePage-blurb">
                     <h1>Hi, I am Gabriel 👋</h1>
-                    <p>CS Graduate | Software Developer | Canada 🍁</p>
+                    <p>Software Developer | Canada 🍁</p>
                     <p>I love to learn and strive for more!</p>
                     <div className="HomePage-contacts">
                         <div className="HomePage-resume">
@@ -138,6 +138,7 @@ function HomePage(){
                         :
                         <p>No Experiences Listed</p>
                     }
+                    <div className="HomePage-experience-line"></div>
                 </div>
             </div>
             <div className="HomePage-featured">

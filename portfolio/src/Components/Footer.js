@@ -13,7 +13,7 @@ function Footer(){
             <img src={Cat}></img>
             <div className="Footer-contacts">
                 <LinkedIn/>
-                <Github/>
+                <Github url={"https://github.com/hliwudnew"}/>
                 <Email/>
             </div>
         </div>
