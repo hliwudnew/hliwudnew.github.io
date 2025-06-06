@@ -1,6 +1,5 @@
-.Navbar-container{
+/* .Navbar-container{
     text-align: center;
-    /* border: 1px pink solid; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -11,10 +10,9 @@
     background-color:#00051105;
     padding-top: 1%;
     padding-bottom: 1%;
-    /* background: rgba(255, 255, 255, 0.1); */
     backdrop-filter: blur(5px);
     z-index: 10000000000000000000000000;
-}
+} */
 
 @media only screen and (min-width: 0px) {
     .Navbar-container{
@@ -32,7 +30,8 @@
     padding-bottom: 1%;
     /* background: rgba(255, 255, 255, 0.1); */
     backdrop-filter: blur(5px);
-    z-index: 10000000000000000000000000;
+    z-index: 9999;
+    isolation: isolate;
 }
 }
 
@@ -54,7 +53,8 @@
     margin-right: 7.5%;
     /* background: rgba(255, 255, 255, 0.1); */
     backdrop-filter: blur(5px);
-    z-index: 10000000000000000000000000;
+    z-index: 9999;
+    isolation: isolate;
 }
 }
 
@@ -76,7 +76,8 @@
     margin-right: 7.5%;
     /* background: rgba(255, 255, 255, 0.1); */
     backdrop-filter: blur(5px);
-    z-index: 10000000000000000000000000;
+    z-index: 9999;
+    isolation: isolate;
 }
 }
 
@@ -98,6 +99,7 @@
     margin-right: 30%;
     /* background: rgba(255, 255, 255, 0.1); */
     backdrop-filter: blur(5px);
-    z-index: 10000000000000000000000000;
+    z-index: 9999;
+    isolation: isolate;
 }
 }
