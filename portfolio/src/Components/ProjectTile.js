@@ -7,7 +7,7 @@ function ProjectTile({data}){
     return(
         <div className="ProjectTile-container">
             <div className="ProjectTile-img-container">
-                <img style={{height:"inherit"}} src={data.img?data.img:""} alt="No Image Found"></img>
+                <img className="ProjectTile-img" src={data.img?data.img:""} alt="No Image Found"></img>
             </div>
             <div className="ProjectTile-details">
                 <h4 style={{margin:"0%"}}>{data.name?data.name:"Name Not Found"}</h4>
@@ -18,7 +18,7 @@ function ProjectTile({data}){
                     data.techs?
                     data.techs.map((text, index) =>{
                         return(
-                            <p key={index} style={{margin:"0%", marginRight:"2%",padding:"2%", borderRadius:"15%", backgroundColor:"#293377", fontSize:"12px", color:"#cfe8ff"}}>{text}</p>
+                            <p key={index} style={{margin:"0%",marginBottom:"2%", marginRight:"2%",padding:"2%", borderRadius:"15%", backgroundColor:"#293377", color:"#cfe8ff"}}>{text}</p>
                         )
                     })
                     :

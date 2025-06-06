@@ -1,4 +1,4 @@
-.ProjectTile-container{
+/* .ProjectTile-container{
     text-align: center;
     border: 1px solid #cfe8ff;
     border-radius: 5%;
@@ -24,7 +24,7 @@
 
 .ProjectTile-img-container{
     
-}
+} */
 
 /* .ProjectTile-tech{
     margin:"0%";
@@ -33,3 +33,144 @@
     background-color:"#293377"; 
     font-size:"12px";
 } */
+
+@media only screen and (min-width: 0px) {
+    .ProjectTile-container{
+        text-align: center;
+        border: 1px solid #cfe8ff;
+        border-radius: 5%;
+        padding: 5%;
+        /* background: rgba(255, 255, 255, 0.1); */
+    }
+
+    .ProjectTile-frameworks{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 5%;
+        font-size: small;
+    }
+
+    .ProjectTile-details{
+        text-align: left;
+        padding-top: 5%;
+    }
+
+    .ProjectTile-buttons{
+        padding-top: 5%;
+        text-align: left;
+    }
+
+    .ProjectTile-img-container{
+
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .ProjectTile-container{
+        text-align: center;
+        border: 1px solid #cfe8ff;
+        border-radius: 5%;
+        padding: 5%;
+        /* background: rgba(255, 255, 255, 0.1); */
+    }
+
+    .ProjectTile-frameworks{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 5%;
+        font-size: medium;
+    }
+
+    .ProjectTile-details{
+        text-align: left;
+        padding-top: 5%;
+        font-size: larger;
+    }
+
+    .ProjectTile-buttons{
+        padding-top: 5%;
+        text-align: left;
+    }
+
+    .ProjectTile-img-container{
+
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .ProjectTile-container{
+        text-align: center;
+        border: 1px solid #cfe8ff;
+        border-radius: 5%;
+        padding: 5%;
+        /* background: rgba(255, 255, 255, 0.1); */
+    }
+
+    .ProjectTile-frameworks{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 5%;
+        font-size: large;
+    }
+
+    .ProjectTile-details{
+        text-align: left;
+        padding-top: 5%;
+        font-size: x-large;
+    }
+
+    .ProjectTile-buttons{
+        padding-top: 5%;
+        text-align: left;
+    }
+
+    .ProjectTile-img-container{
+        width: 100%;
+    }
+
+    .ProjectTile-img{
+        width: 50%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .ProjectTile-container{
+        text-align: center;
+        border: 1px solid #cfe8ff;
+        border-radius: 5%;
+        padding: 5%;
+        /* background: rgba(255, 255, 255, 0.1); */
+    }
+
+    .ProjectTile-frameworks{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 5%;
+        font-size: small;
+    }
+
+    .ProjectTile-details{
+        text-align: left;
+        padding-top: 5%;
+        font-size: medium;
+    }
+
+    .ProjectTile-buttons{
+        padding-top: 5%;
+        text-align: left;
+    }
+
+    .ProjectTile-img-container{
+        width: 100%;
+    }
+
+    .ProjectTile-img{
+        width: 50%;
+        height: 100%;
+    }
+}
