@@ -1,5 +1,4 @@
 import "../Styles/HomePage.css";
-import me from "../Images/images.png"
 import ProjectTile from "../Components/ProjectTile";
 import {useNavigate } from "react-router-dom";
 import LinkedIn from "../Components/LinkedIn";
@@ -7,85 +6,25 @@ import Github from "../Components/Github";
 import Email from "../Components/Email";
 import Resume from "../Components/Resume";
 import Experience from "../Components/Experience";
-import Grabbit from "../Images/grabbit.png";
-import StaticRide from "../Images/staticride.png"
 import { useState } from "react";
-import moneris from "../Images/moneris-logo-small.png";
-import yorku from "../Images/YorkU.jpg";
-import deepdiveai from "../Images/deepdiveai.jpg"
 import TechStack from "../Images/TechStack/images.js"
 import Gabriel from "../Images/me.jpg";
+import experiencesData from "../data/experiences.js"
+import projectsData from "../data/projects.js";
 function HomePage(){
     const navigate = useNavigate();
     const [swapData,setSwapData] = useState("work");
-    const [experience,setExperience] = useState([
-        {
-            type:"work",
-            started:"May 2023",
-            ended:"Sept 2023",
-            where:"Deepdiveai",
-            title:"Frontend Software Development: Summer Intern",
-            points:[
-                "Development in MERN: MongoDB, Express, React, Node.js",
-                "Developed frontend features in React for memo editing and processing for backend",
-                "Built utility features with Lexical for memo editing",
-                "Constructed design documentations for project documentation and represenation",
-            ],
-            img:deepdiveai,
-            link:"https://deepdiveai.ca/",
-        },
-        {
-            type:"work",
-            started:"May 2022",
-            ended:"Sept 2022",
-            where:"Moneris",
-            title:"Software QA: Summer Intern",
-            points:[
-                "Developed Jmeter tests for backend preformace testing under all load circumstances", 
-                "Tested new front end UI features and tested backend features with Postman",
-                "Facilitated meetings to address website defects and coordinated solutions with the development team. ",
-            ],
-            img:moneris,
-            link:"https://www.moneris.com/",
-        },
-        {
-            type:"education",
-            started:"2021",
-            ended:"2025",
-            where:"York University",
-            title:"Lassonde School of Engineering, B.Sc., Hons. Computer Science",
-            points:["Graduated First Class Standing","4 Years - Dean's Honour Roll"],
-            img:yorku,
-            link:"https://www.yorku.ca/",
-        }
-    ])
+    const [experience,setExperience] = useState(experiencesData);
 
     //Only do 2, more might look like a whole lot to look at, as in overwhealming
-    const [projects,setProjects] = useState([
-        {
-            name:"Grabbit",
-            description:"Ecommerce platform - User Oriented: A platform for selling and buying new and used goods, with built in messaging, Stripe payment, seller dashboard, sales stats, and watchlists.",
-            img:Grabbit,
-            techs:["React","MongoDB","Stripe","JWT"],
-            repo:"https://github.com/hliwudnew/Grabbit",
-            demo:"https://www.youtube.com/watch?v=rR0rE0_wH7E"
-        },
-        {
-            name:"Static Ride",
-            description:"Ecommerce platform - Car Dealership: Fully online car dealership with online purchases for vehicles, reviews, comparisons, usage stats, sales records, and with Gemini chatbot asssistance.",
-            img:StaticRide,
-            techs:["React", "MongoDB","AWS","JWT","Gemini 2.0"],
-            repo:"https://github.com/dvoicu-cmd/EECS-4413",
-            demo:""
-        },
-    ])
+    const [projects,setProjects] = useState(projectsData.slice(0,2));
 
     return(
         <div className="HomePage-container">
             <div className="HomePage-introduction">
                 <div className="HomePage-blurb">
                     <h1>Hi, I am Gabriel 👋</h1>
-                    <p>Software Developer | Canada 🍁</p>
+                    <p>Software Developer | Toronto, Canada 🍁</p>
                     <p>I love to learn and strive for more!</p>
                     <div className="HomePage-contacts">
                         <div className="HomePage-resume">
@@ -109,7 +48,7 @@ function HomePage(){
                             (Object.keys(TechStack)).map((tech) =>{
                                 return(
                                     <div key={tech} className="TechStack-Combo">
-                                        <img style={{width:"32px", height:"32px", marginRight:"5%"}} src={TechStack[tech]}></img>
+                                        <img alt={tech + `_img`} style={{width:"32px", height:"32px", marginRight:"5%"}} src={TechStack[tech]}></img>
                                         <p>{tech}</p>
                                     </div>
                                 )
